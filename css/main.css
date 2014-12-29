@@ -1,0 +1,155 @@
+body
+{
+	background-image: url("../images/weather.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 100%;
+	height: auto;
+} 
+
+.head
+{	
+	margin-top: 10%;
+	font-family: 'Lato', sans-serif;
+	font-weight:400;	
+	font-style: italic;
+	font-size: 3.0em;
+}
+.arrow.prev {
+    opacity: 1;
+    left: 20px;
+
+    background-image: url(../assets/img/paddle_prev_999.png);
+    transition: 0.2s linear all;
+}
+
+.arrow.next {
+    opacity: 1;
+    right: 20px;
+    background-image: url(../assets/img/paddle_next_999.png);
+    transition: 0.2s linear all;
+}
+
+.arrow.prev:hover {
+    opacity: 1;
+    background-image: url(../assets/img/paddle_prev_fff.png);
+}
+
+.arrow.next:hover {
+    opacity: 1;
+    background-image: url(../assets/img/paddle_next_fff.png);
+}
+/*
+ The animate class is apart of the element and the ng-enter class
+ is attached to the element once the enter animation event is triggered
+*/
+.animation.ng-enter {
+ -webkit-transition: 1s linear all; /* Safari/Chrome */
+ transition: 1s linear all; /* All other modern browsers and IE10+ */
+
+ /* The animation preparation code */
+ opacity: 0;
+}
+
+/*
+ Keep in mind that you want to combine both CSS
+ classes together to avoid any CSS-specificity
+ conflicts
+*/
+.animation.ng-enter.ng-enter-active {
+ /* The animation code itself */
+ opacity: 1;
+}
+.fa-chevron-right
+{
+	margin-left: 93%;
+	margin-top: 30%;
+	color: red;
+}
+.fa-chevron-left
+{
+	margin-right: 93%;
+	margin-top: 30%;
+	color: red;
+}
+/* #wrap{
+	z-index:-1; 
+	background-size:cover;
+	top:0; 
+	left:0;
+	height: auto;
+}
+#wrap img.bgfade{
+	position:absolute;
+	top:0;
+	display:none;
+	background-size:cover;
+	z-index:-1
+}  */
+#cityBox
+{
+    font-family: 'Roboto', sans-serif; 
+}
+#dynamic
+{
+	font-family: 'Roboto', sans-serif; 
+	font-weight:400;	
+	color: orange;
+
+}
+.day
+{
+	color: orange;
+}
+.form-control
+{
+	height: auto;
+	font-size: 1.0em;
+}
+.errors
+{
+	color: orange;
+	font-family: 'Lato', sans-serif;
+}
+.wrongCity
+{
+	color: orange;
+	font-family: 'Lato', sans-serif;
+}
+.show
+{
+	display: block;
+}
+.input1
+{
+	font-family: 'Roboto', sans-serif;
+	font-weight:400;	
+	font-style: italic;
+	font-size: 1.0em;
+}
+.forecast
+{
+	vertical-align: middle;
+	padding-left: 32%;
+	font-family: 'Roboto', sans-serif;
+	font-weight:400;	
+	font-style: italic;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    red !important;
+    font-size: 0.5em;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    red !important;
+   opacity:  1;
+   font-size: 0.5em;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    red !important;
+   opacity:  1;
+   font-size: 0.5em;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color:    red !important;
+   font-size: 0.5em;
+}
